@@ -1,13 +1,13 @@
 pragma solidity ^0.6.11;
 contract HelloWorld {
 	string public greeting;
-	function HelloWorld(string _greeting) {
+	constructor(string memory _greeting) public{
 		greeting = _greeting;
 	}
-	function setGreeting(string _greeting) {
+	function setGreeting(string memory _greeting) public{
 		greeting = _greeting;
 	}
-	function say() constant returns(string) {
+	function say() public view returns(string memory) {
 		return greeting;
 	}
 }
