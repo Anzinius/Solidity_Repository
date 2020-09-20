@@ -5,7 +5,7 @@ const endpoint = 'http://octet-fullhistory-test.hexlant.com:3000/v1/rpc'
 const web3 = new Web3(endpoint);
 //                          1,          1000,        0x12345
 (async function getHistory(startBlock, endBlock, targetAddress){
-    const checkSumAddress = web3.utils.toCheckSumAddress(targetAddress);
+    const checkSumAddress = web3.utils.toChecksumAddress(targetAddress);
     
     let targetBlock = startBlock;
 
@@ -38,4 +38,4 @@ const web3 = new Web3(endpoint);
         // 타겍 블록 +1
         targetBlock +=1;
     }
-})(5, 15, '0xe9a482a509e99115b36c5ce2f038d3c3ceb3b35fb3b27df712e8e0bb36a6b385');
+})(5, 15, '0x0ff38ef08760a6e913db7e9bda7ef9728e68c61f');
