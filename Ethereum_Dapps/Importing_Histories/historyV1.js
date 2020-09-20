@@ -16,7 +16,7 @@ const web3 = new Web3(endpoint);
 
         for (let i = 0 ; i<transactions.length; i += 1){ //trasnacion 순회
             //from , to , value, hash
-            const { from, to, hash} = i;
+            const {from, to, hash} = i;
             
             if(!to) continue; //트랜잭션 배포로 인해 널값이 아닌지 확인
             //EOA - getCode -> '0x'

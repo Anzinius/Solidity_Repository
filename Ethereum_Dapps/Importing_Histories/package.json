@@ -1,7 +1,7 @@
 {
-  "name": "DECENTER_JEJU",
+  "name": "IMPORTING_HISTORIES",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "historyV1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
