@@ -1,6 +1,6 @@
 pragma solidity >=0.4.22 <0.6.0;
 
-contract MyContract {
+contract Blood5 {   // Blood Transfusion
    struct Patient {
        string patientName;
        string gender;
@@ -13,7 +13,7 @@ contract MyContract {
    event LogBloodTransfusion (
        uint _patientId
    );
-   
+
    function setPatientInfo(uint _patientId, string memory _name, string memory _gender, string memory _blood, uint _age) public {
        Patient storage patient = patientInfo[_patientId];
 
